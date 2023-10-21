@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz-details.css">
+    <title>Quiz-details</title>
+</head>
+<body>
+    <div class="main-detail">
+        <div class="box-detail">
+            <h1>Welcome to the Brain Teaser Challenge</h1>
+            
+            <div class="details">
+                <p class="detail-para">
+                    <span>The quiz:</span> There will be 7 apptitude questions, user will be given 
+                    4 options for each question.
+                </p>    
+                <p class="detail-para">
+                    <span>Time Limit:</span> User will get 20 seconds for each question.
+                    
+                </p>
+                <p class="detail-para">
+                    <span>Points:</span> For every correct question user user will get +5 Points.
+                </p>
+                <p class="detail-para">
+                    <span>Panelty:</span> -1 for every wrong question.
+                </p>
+                <p class="detail-para">
+                    <span>Score:</span> Score will be visible at the end of the quiz.
+                </p>
+                <div class="detail-bottom">
+                <p class="detail-bottom-para">Are you ready to take the challenge and prove your knowledge?</p>
+                <button id="startQuizButton" type="button">Play quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function startQuiz(){
+            window.location.href = "questions.html";
+        } 
+
+        document.getElementById("startQuizButton").addEventListener("click",startQuiz);
+    </script>
+</body>
+</html>

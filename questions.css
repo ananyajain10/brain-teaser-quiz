@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#E5CFF7;
+}
+.ques-main{
+    width: 100%;
+    
+    
+}
+
+.ques-box{
+    width: 90%;
+    height: 90%;
+    background-color: #9D76C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    
+
+}   
+
+h1{
+    padding: 5px;
+    color: #5B0888;
+}
+
+img{
+   width: 30vw;
+   height: 12vw; 
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   border: 1px solid transparent;
+   border-radius: 2px;
+}
+
+.ques-data{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+
+.ques{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 15px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ques-optns{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 15px;
+}
+
+input{
+    margin: 1em;
+}
+.ques-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    margin: 2em 3em;
+    width: 75px;
+    height: 50%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #713ABE;
+}
+
+button:hover{
+    background-color: #5B0888;
+}
+
+#showScore{
+    background-color: #9D76C1;
+    margin: 3em;
+    padding: 3rem 4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+#showScore p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showScore .restart-btn{
+    
+    outline: none;
+    background-color: #713ABE;
+    display: block;
+    cursor: pointer;
+}
+
+#showScore .restart-btn:hover{
+    background-color: #5B0888;
+}
+
+.showScore{
+    display: none;
+}
