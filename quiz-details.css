@@ -105,6 +105,7 @@ span{
     border-radius: 2px;
     border: none;
     background-color: #911bd1;
+    color: #f4f4f4;
 }
 #startQuizButton:hover{
     background-color: #671295;
