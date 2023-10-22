@@ -10,18 +10,34 @@
 <body>
     <div class="main">
         <div class="box">
-            <img class="main-img" src="./character-playing-videogame (1)/main.jpg" alt="quiz-game">
+            <img class="main-img" src="./character-playing-videogame (1)/3717879.jpg" alt="quiz-game">
             <div class="details-box">
                 <h2 class="main-head">Join the brain teaser challenge</h2>
+
+                <audio src="mixkit-electronic-retro-block-hit-2185.wav" id="play-music"></audio>
+
                 <div class="details">
-                    <input class="main-input-field" type="text" name="firstname" id="firstname" placeholder="Enter FirstName" required>
-                    <input class="main-input-field" type="text" name="lastname" id="lastname" placeholder="Enter LastName" required>
+                    <input class="main-input-field" type="text" name="firstname" id="firstname" placeholder="Enter First name" required>
+                    <input class="main-input-field" type="text" name="lastname" id="lastname" placeholder="Enter Last name" required>
                     <input class="main-input-field" type="email" name="email" id="email" placeholder="Enter Email" required>
-                    <button type="submit" class="main-start-btn" id="saveBtn">Start</button>
+
+                    
+
+                    <button type="submit" class="main-start-btn" id="saveBtn" onclick="playMusic()">Start</button>
+                   
+
                 </div>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+
+        var music = document.getElementById("play-music");
+        function playMusic() {
+            music.play();
+        };
+        
+    </script>
 </body>
 </html>

@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="questions.css">
-    <title>Document</title>
+    <title>Brain Teaser</title>
 </head>
+
 <body>
     <div class="ques-main" id="ques-main">
         <div class="ques-box">
             <h1>Brain Teaser</h1>
-            <img id="ques-img" src="ques1.jpg" alt="apple">
+            <div>Time left: <span id="seconds">00</span> seconds</div>
             <div class="ques-data">
                 <p id="quess">
-                    A doctor and a bus driver are both in love with the same woman, an attractive girl named Sarah. The bus driver had to go on a long bus trip that would last a week. Before he left, he gave Sarah seven apples. Why?
+                    A doctor and a bus driver are both in love with the same woman, an attractive girl named Sarah. The
+                    bus driver had to go on a long bus trip that would last a week. Before he left, he gave Sarah seven
+                    apples. Why?
                 </p>
                 <div class="ques-optns" id="ques-optns">
                     <div>
-                  <input type="radio" class="answer" name="ans" id="ans1" >
-                  <label id="opt1">A. As a parting gift.</label>
+                        <input type="radio" class="answer" name="ans" id="ans1">
+                        <label id="opt1">A. As a parting gift.</label>
                     </div>
                     <div>
-                    <input type="radio" class="answer" name="ans" id="ans2" > 
-                  <label id="opt2">B. To remind her of him.</label>
-                </div>
-                <div>
-                    <input type="radio" class="answer" name="ans" id="ans3" >
-                  <label id="opt3"> C. To keep the doctor away.</label>
-                </div>
-                <div>
-                    <input type="radio" class="answer" name="ans" id="ans4" >
-                    <label id="opt4">D. To make apple pie.</label>
-                </div>
-                 
+                        <input type="radio" class="answer" name="ans" id="ans2">
+                        <label id="opt2">B. To remind her of him.</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="answer" name="ans" id="ans3">
+                        <label id="opt3"> C. To keep the doctor away.</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="answer" name="ans" id="ans4">
+                        <label id="opt4">D. To make apple pie.</label>
+                    </div>
+
+                    <audio src="mixkit-electronic-retro-block-hit-2185.wav" id="play-audio"></audio>
+
                 </div>
                 <div class="ques-controls">
-                    <button id="nextButton">Next</button>
-                    <button id="skipButton">Skip</button>
+                    <button id="nextButton" onclick="playMusic()">Next</button>
+                    <button id="skipButton" onclick="playMusic()">Skip</button>
                 </div>
-                <div class="end-game">
-                    <p id="showScore" class="showScore"></p>
-                </div>
+                
             </div>
         </div>
     </div>
     <script src="questions.js"></script>
+    <script>
+        var music = document.getElementById("play-audio");
+        function playMusic() {
+            music.play();
+        };
+    </script>
 </body>
+
 </html>

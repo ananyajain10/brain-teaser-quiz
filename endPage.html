@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="endPage.css">
+    <title>Brain teaser</title>
+</head>
+<body>
+    <div class="main-end">
+        <div class="main-box">
+            <img src="runner.png" alt="game-over-image">
+
+            <audio src="mixkit-electronic-retro-block-hit-2185.wav" id="play-audio"></audio>
+
+            
+            <div class="card">
+                    
+                    <h4>GAME END</h4>
+                    <h4 class="name-end" id="name-end">Well done! <span id="user-name"></span></h4> 
+                    <h4 class="score" id="score">Your Score: <span id="user-score"></span></h4>
+                   
+                    <button id="play-again-btn" onclick="playMusic()">Play again</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var music = document.getElementById("play-audio");
+        function playMusic(){
+           music.play();
+        };
+
+    </script>
+
+   <script src="endPage.js"></script>
+
+</body>
+</html>

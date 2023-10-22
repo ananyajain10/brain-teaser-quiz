@@ -18,7 +18,7 @@ body{
 
 .box-detail{
     width: 90%;
-    background-color: #9D76C1;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ body{
 }
 
 h1{
-    color:#5B0888;
+    color: #9D76C1;
     padding: 5px;
     font-size: 4vw;
     
@@ -82,7 +82,7 @@ span{
 }
 
 .detail-bottom{
-    background-color: #713ABE;
+    background-color: #9D76C1;
     padding: 15px;
     margin: 5px;
     border: 1px solid transparent;
@@ -104,10 +104,10 @@ span{
     border: 1px solid transparent;
     border-radius: 2px;
     border: none;
-    background-color: #5f0ed1;
+    background-color: #911bd1;
 }
 #startQuizButton:hover{
-    background-color: #5B0888;
+    background-color: #671295;
 }
 
 
