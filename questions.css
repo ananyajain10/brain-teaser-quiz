@@ -81,6 +81,11 @@ p{
 input{
     margin: 1em;
 }
+
+#quess{
+    text-align: center;
+    justify-content: center;
+}
 .ques-controls{
     display: flex;
     align-items: center;
@@ -96,6 +101,7 @@ button{
     border: 1px solid transparent;
     border-radius: 2px;
     background-color: #713ABE;
+    color: #ffffff;
 }
 
 button:hover{
