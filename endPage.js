@@ -1,6 +1,6 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getFirestore, doc,  setDoc } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"
+import { getFirestore, doc, setDoc, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"
 
 
 const firebaseConfig =  {
@@ -37,14 +37,21 @@ playAgain.addEventListener("click", () => {
   const app = initializeApp(firebaseConfig);
  
  
- 
   const db = getFirestore(app);
-  console.log(db);
+//   for same id
 // Get a list of cities from your database
-await setDoc(doc(db, "players", "a"),{
+// await addDoc(doc(db, "players", fname),{
+//     firstName: fname,
+//     lastName: lname,
+//     Age: age,
+//     Score: score
+// });
+
+// for auto generated id
+const newPlayer = doc(collection(db, "players"));
+await setDoc(newPlayer, {
     firstName: fname,
     lastName: lname,
     Age: age,
     Score: score
 });
-
