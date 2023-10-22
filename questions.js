@@ -135,7 +135,11 @@ const updateTimer = () => {
 
         }
         clearInterval(timer);
-        
+       
+    timeLeft = 10;
+    updateTimer();
+
+    timer = setInterval(updateTimer, 1000);
 
     }
 };
