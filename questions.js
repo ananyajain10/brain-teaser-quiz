@@ -112,7 +112,7 @@ let score = 0;
 
 // initial time
 
-let timeLeft = 15;
+let timeLeft = 30;
 
 // updateTimer
 
@@ -135,11 +135,11 @@ const updateTimer = () => {
 
         }
         clearInterval(timer);
-       
-    timeLeft = 15;
-    updateTimer();
 
-    timer = setInterval(updateTimer, 1000);
+        timeLeft = 30;
+        updateTimer();
+
+        timer = setInterval(updateTimer, 1000);
 
     }
 };
@@ -161,7 +161,7 @@ const loadQuestion = () => {
 
     // Reset the timer
     clearInterval(timer);
-    timeLeft = 15;
+    timeLeft = 30;
     updateTimer();
 
     timer = setInterval(updateTimer, 1000);
