@@ -29,8 +29,23 @@ const playAgain = document.querySelector("#play-again-btn");
 
 playAgain.addEventListener("click", () => {
     localStorage.setItem("score","0");
-    location.href = "questions.html";
+
+    const userDetails = {
+      fname: "",
+      lname: "",
+      age: ""
+  };
+
+  localStorage.setItem("userDetails", JSON.stringify(userDetails));
+   
+    location.href = "index.html";
 } );
+
+const detailedResult = document.querySelector("#detailed-result");
+
+detailedResult.addEventListener("click", () => {
+          location.href = "questionStatus.html";
+})
 
 
   // Initialize Firebase

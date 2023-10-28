@@ -80,16 +80,7 @@ const questions = [
 
 ];
 
-const questionImages = [
-    "ques1.jpg",
-    "./cute-husky-dog-pilot-cartoon-vector-icon-illustration-animal-transportation-icon-concept-isolated/ques2.jpg",
-    "./time-management-concept-landing-page/ques3.jpg",
-    "./dreamer-concept-illustration/ques4.jpg",
-    "./hand-drawn-flat-design-b2b-illustration/ques5.jpg",
-    "./privacy-engineering-abstract-concept-illustration/ques6.jpg",
-    "./retro-numbers-background/ques7.jpg"
 
-]
 
 
 
@@ -191,6 +182,8 @@ const deselectAll = () => {
     answers.forEach((currAnsElem) => currAnsElem.checked = false);
 }
 
+var correctQuesuions = [];
+var incorrectQuestions = [];
 nextButton.addEventListener("click", () => {
 
     const checkedAnswer = getCheckedAnswer();
@@ -198,15 +191,19 @@ nextButton.addEventListener("click", () => {
 
     if (checkedAnswer === questions[currentQuestionIndex].correctAnswer) {
         score += 5;
-
+        correctQuesuions.push(currentQuestionIndex);
 
     } else {
         score -= 1;
-
+        incorrectQuestions.push(currentQuestionIndex);
     }
 
     localStorage.setItem("score", score);
+console.log(correctQuesuions);
+localStorage.setItem("correctAnswers", JSON.stringify(correctQuesuions));
+localStorage.setItem("incorrectAnswers", JSON.stringify(incorrectQuestions));
 
+console.log(incorrectQuestions);
 
     deselectAll();
 

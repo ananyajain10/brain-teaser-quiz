@@ -54,6 +54,21 @@ body{
     background-color: #5B0888;
 }
 
+#detailed-result{
+    margin: 2em 3em;
+    width: fit-content;
+    color: #f4f4f4;
+    height: 50%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #713ABE;
+}
+
+#detailed-result:hover{
+    background-color: #5B0888;
+}
+
 img{
     width: 50%;
     height: 50%;
