@@ -104,11 +104,11 @@ span{
     border: 1px solid transparent;
     border-radius: 2px;
     border: none;
-    background-color: #911bd1;
+    background-color: #713ABE;
     color: #f4f4f4;
 }
 #startQuizButton:hover{
-    background-color: #671295;
+    background-color: #5B0888;
 }
 
 

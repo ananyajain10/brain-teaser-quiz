@@ -1,13 +1,15 @@
 function saveUserDetails(){
     const fname = document.getElementById("firstname").value;
     const lname = document.getElementById("lastname").value;
-    const age = document.getElementById("age").value;
+    // const age = document.getElementById("age").value;
+    const email = document.getElementById("email").value;
 
-    if (fname && lname && age){
+    if (fname && lname && email){
         const userDetails = {
             fname: fname,
             lname: lname,
-            age: age
+            
+            email:email
         };
 
         localStorage.setItem("userDetails", JSON.stringify(userDetails));

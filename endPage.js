@@ -15,7 +15,7 @@ const firebaseConfig =  {
 
 var fname = JSON.parse(localStorage.getItem("userDetails")).fname;
 var lname = JSON.parse(localStorage.getItem("userDetails")).lname;
-var age = JSON.parse(localStorage.getItem("userDetails")).age;
+var email = JSON.parse(localStorage.getItem("userDetails")).email;
 
 var score = localStorage.getItem("score");
 
@@ -33,7 +33,7 @@ playAgain.addEventListener("click", () => {
     const userDetails = {
       fname: "",
       lname: "",
-      age: ""
+      email: ""
   };
 
   localStorage.setItem("userDetails", JSON.stringify(userDetails));
@@ -67,6 +67,6 @@ const newPlayer = doc(collection(db, "players"));
 await setDoc(newPlayer, {
     firstName: fname,
     lastName: lname,
-    Age: age,
+    email: email,
     Score: score
 });
