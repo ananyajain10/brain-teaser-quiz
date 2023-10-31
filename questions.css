@@ -32,7 +32,12 @@ body{
     
     
 
-}   
+} 
+
+span{
+    font-weight: 800;
+    font-size: 20px;
+}
 
 h1{
     padding: 5px;
@@ -56,18 +61,18 @@ img{
     margin: 5px;
 }
 
-.ques{
+#quess{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
     padding: 15px;
-}
-
-p{
     font-size: 20px;
     font-weight: 400;
 }
+
+
 
 .ques-optns{
     display: flex;
