@@ -182,25 +182,28 @@ const deselectAll = () => {
     answers.forEach((currAnsElem) => currAnsElem.checked = false);
 }
 
-var correctQuesuions = [];
+var correctQuestions = [];
 var incorrectQuestions = [];
+var unattemptedQuestions = [];
 nextButton.addEventListener("click", () => {
 
     const checkedAnswer = getCheckedAnswer();
     console.log(checkedAnswer);
 
+    if (checkedAnswer){
     if (checkedAnswer === questions[currentQuestionIndex].correctAnswer) {
         score += 5;
-        correctQuesuions.push(currentQuestionIndex);
+        correctQuestions.push(currentQuestionIndex);
 
     } else {
         score -= 1;
         incorrectQuestions.push(currentQuestionIndex);
     }
+}
 
-    localStorage.setItem("score", score);
-console.log(correctQuesuions);
-localStorage.setItem("correctAnswers", JSON.stringify(correctQuesuions));
+localStorage.setItem("score", score);
+console.log(correctQuestions);
+localStorage.setItem("correctAnswers", JSON.stringify(correctQuestions));
 localStorage.setItem("incorrectAnswers", JSON.stringify(incorrectQuestions));
 
 console.log(incorrectQuestions);
@@ -223,6 +226,8 @@ console.log(incorrectQuestions);
 });
 
 skipButton.addEventListener("click", () => {
+    unattemptedQuestions.push(currentQuestionIndex);
+    localStorage.setItem("unattemptedQuestions", JSON.stringify(unattemptedQuestions));
     deselectAll();
     currentQuestionIndex++;
 

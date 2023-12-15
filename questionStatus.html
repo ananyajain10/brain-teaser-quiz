@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="questionStatus.css">
     <title>Detailed results</title>
 </head>
+
 <body>
-    <div class="tab-container">
-        <ul class="tabs">
-            <li class="tab active" data-tab="correct">Correct Questions</li>
-            <li class="tab" data-tab="incorrect">Incorrect Questions</li>
-            <li class="tab" data-tab="unattempted">Unattempted Questions</li>
-        </ul>
-
-        <div class="tab-content">
-            <div id="correct" class="tab-pane active">
-                <!-- Correct Questions -->
-            </div>
-            <div id="incorrect" class="tab-pane">
-                <!-- Incorrect Questions -->
-            </div>
-            <div id="unattempted" class="tab-pane">
-                <!-- Unattempted Questions -->
-            </div>
+    <div class="wrap">
+        <div class="tabcontent">
+            <button class="correct" id="correct"> Correct </button>
+            <button class="incorrect" id="incorrect">Incorrect</button>
+            <button class="unattempted" id="unattempted">Skipped</button>
         </div>
-    </div>
 
+        <div id="tabCorrect" class="tabcontents">
+            <ul id="corrAnslist"></ul>
+
+        </div>
+
+        <div id="tabIncorrect" class="tabcontents">
+            <ul id="incorrAnslist"></ul>
+        </div>
+
+        <div id="tabUnattempted" class="tabcontents">
+            <ul id="unattemptAnslist"></ul>
+        </div>
+
+    </div>
     <script src="questionStatus.js"></script>
 
 </body>
+
 </html>

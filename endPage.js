@@ -33,11 +33,18 @@ playAgain.addEventListener("click", () => {
     const userDetails = {
       fname: "",
       lname: "",
-      email: ""
+      email: "",
+
   };
 
+  const correctAnswers = [];
+  const incorrectAnswers = [];
+  const unattemptedQuestions = [];
+
   localStorage.setItem("userDetails", JSON.stringify(userDetails));
-   
+  localStorage.setItem("correctAnswers", JSON.stringify(correctAnswers));
+  localStorage.setItem("incorrectAnswers", JSON.stringify(incorrectAnswers));
+  localStorage.setItem("unattemptedQuestions", JSON.stringify(unattemptedQuestions));
     location.href = "index.html";
 } );
 
