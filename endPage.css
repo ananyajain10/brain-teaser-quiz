@@ -40,6 +40,7 @@ body{
 }
 
 #play-again-btn{
+    cursor: pointer;
     margin: 2em 3em;
     width: fit-content;
     color: #f4f4f4;
@@ -67,6 +68,7 @@ body{
 
 #detailed-result:hover{
     background-color: #5B0888;
+    cursor: pointer;
 }
 
 img{

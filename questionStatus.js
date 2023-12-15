@@ -48,19 +48,21 @@ const questions = [
 var correctQues = document.querySelector("#correct");
 var incorrectQues = document.querySelector("#incorrect");
 var unattemptedQues = document.querySelector("#unattempted");
-
+var corrCount = document.querySelector("#corrCount");
+var incorrCount = document.querySelector("#incorrCount");
+var unattCount = document.querySelector("#unattCount");
 var corrlist = document.querySelector("#corrAnslist");
 var incorrlist = document.querySelector("#incorrAnslist");
 var unattlist = document.querySelector("#unattemptAnslist");
-
-
 var correctAnsArr = JSON.parse(localStorage.getItem("correctAnswers"))
 var incorrectAnsArr = JSON.parse(localStorage.getItem("incorrectAnswers"))
 var unattemptedAnsArr = JSON.parse(localStorage.getItem("unattemptedQuestions"))
 
 console.log(correctAnsArr, incorrectAnsArr, unattemptedAnsArr);
 
-
+corrCount.innerHTML = correctAnsArr.length;
+incorrCount.innerHTML = incorrectAnsArr.length;
+unattCount.innerHTML = unattemptedAnsArr.length;
 
 
 

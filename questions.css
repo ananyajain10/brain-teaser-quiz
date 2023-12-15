@@ -99,6 +99,7 @@ input{
 }
 
 button{
+    cursor: pointer;
     margin: 2em 3em;
     width: 75px;
     height: 50%;
